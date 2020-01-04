@@ -8,5 +8,5 @@ compile:
 copy: compile
 	cp bin/*.out ~/.bashconfig
 
-update: copy
+install: copy
 	source ~/.bash_profile
