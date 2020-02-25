@@ -13,3 +13,8 @@ copy: compile
 install: copy
 	echo "Updating profile..."
 	source ~/.bash_profile
+
+clean:
+	echo "Cleaning..."
+	rm -r ~/.bashconfig
+	rmdir ~/.bashconfig
