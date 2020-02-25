@@ -8,6 +8,8 @@
 
 using namespace std;
 
+
+//WHITEDGRAY DGRAYORANGE WHITEORANGE ORANGEDGRAY WHITEDGRAY DGRAYDEFAULT
 void PrintStandard(string cwd, string hostname, string username, int colors) {
   bool color;
   if (colors == 1) {
@@ -45,6 +47,7 @@ void Standard(int colors) {
 
 }
 
+//FGBB FBBG FBBG FGBB FGBB FBBD
 void PrintGit(string cwd, string hostname, string username, int colors) {
   bool color;
   if (colors == 1) {
@@ -84,6 +87,7 @@ void Git(int colors, char * branchName) {
 
 }
 
+//FRBW FWBR FWBR FRBW FRBW FWBD
 void PrintError(string cwd, string hostname, string username, int colors) {
   bool color;
   if (colors == 1) {

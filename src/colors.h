@@ -1,9 +1,11 @@
 #ifndef __COLORS_H_INCLUDE__
 #define __COLORS_H_INCLUDE__
 
-//Colors
+//Shapes
 #define ARROW ""
 #define BRANCH ""
+
+//Colors
 #define DGRAYORANGE "\033[48;5;202;38;5;243m"
 #define ORANGEDGRAY "\033[38;5;202;48;5;243m"
 #define DGRAYDEFAULT "\033[38;5;243;48;5;234m"
@@ -17,6 +19,8 @@
 #define FBBG "\033[38;5;33;48;5;46m"
 #define FGBB "\033[38;5;46;48;5;33m"
 #define FBBD "\033[38;5;33;48;5;234m"
+
+//Modes
 #define RESET "\033[0m"
 #define BLINK "\033[5m"
 
