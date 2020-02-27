@@ -1,3 +1,5 @@
+#include "prompts.h"
+
 void PrintStandard(string cwd, string hostname, string username, int colors) {
   bool color;
   if (colors == 1) {
