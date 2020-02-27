@@ -11,11 +11,14 @@ copy: compile
 	@cp bin/${OUTPUT} ~/.bashconfig
 
 install: copy
-	@echo "Updating profile..."
+	@echo "Updating bash profile..."
+	@cat anc/ps1Update.txt >> ~/.bash_profile
 	@source ~/.bash_profile
 
 clean:
 	@echo "Removing ~/.bashconfig..."
 	@rm -r ~/.bashconfig
 
-update: clean install
+update: clean copy
+	@echo "Updating bash profile..."
+	@source ~/.bash_profile
