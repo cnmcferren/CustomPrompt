@@ -18,9 +18,9 @@
 #define ERRSEC "196" //Red
 
 #define STAND1 "\033[38;5;" STANDTER ";48;5;" STANDSEC "m"
-#define STAND2 "\033[38;5;" STANDPRIM ";48;5;" STANDSEC "m"
-#define STAND3 "\033[38;5;" STANDPRIM ";48;5;" STANDTER "m"
-#define STAND4 "\033[38;5;" STANDSEC ";48;5;" STANDPRIM "m"
+#define STAND2 "\033[38;5;" STANDSEC ";48;5;" STANDPRIM "m"
+#define STAND3 "\033[38;5;" STANDTER ";48;5;" STANDPRIM "m"
+#define STAND4 "\033[38;5;" STANDPRIM ";48;5;" STANDSEC "m"
 #define STAND5 "\033[38;5;" STANDSEC ";48;5;234m"
 
 /*
