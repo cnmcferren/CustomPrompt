@@ -14,4 +14,5 @@ To update the prompt to reflect color changes, run the following command:
 ##Changing Color Schemes
 
 In the `colors.h` file, edit the variables indicated. Replace the variables
-with strings of the ANSI color desired and run `make update`
+with strings of the ANSI color desired and run `make update`. To view all 
+available ANSI colors, view the `ANSI.png` file in the root of the project.
