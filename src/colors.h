@@ -5,6 +5,9 @@
 #define ARROW ""
 #define BRANCH ""
 
+//Colors
+//To change colors, change values here but choosing appropriate
+//ANSI color
 #define STANDPRIM "202" //Orange
 #define STANDSEC "243" //DarkGray
 #define STANDTER "255" //White
@@ -29,5 +32,8 @@
 #define ERR1 "\033[38;5;" ERRPRIM ";48;5;" ERRSEC "m"
 #define ERR2 "\033[38;5;" ERRSEC ";48;5;" ERRPRIM "m"
 #define ERR3 "\033[38;5;" ERRSEC ";48;5;234m"
+
+//Modes
+#define RESET "\033[0m"
 
 #endif
