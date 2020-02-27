@@ -1,2 +1,4 @@
-TODO:
-	Add seperate color to allow for colors to be easily changed.
+#CustomPrompt
+
+CustomPrompt is a script that gives colorful and useful bash prompts
+for Linux and Mac OS X
