@@ -1,17 +1,3 @@
-#include "prompts.h"
-#include "colors.h"
-#include <string>
-#include <iostream>
-#include <unistd.h>
-#include <pwd.h>
-#include <stdbool.h>
-
-using namespace std;
-
-
-//WHITEDGRAY DGRAYORANGE WHITEORANGE ORANGEDGRAY WHITEDGRAY DGRAYDEFAULT stand
-//FGBB FBBG FBBG FGBB FGBB FBBD git
-//FRBW FWBR FWBR FRBW FRBW FWBD err
 void PrintStandard(string cwd, string hostname, string username, int colors) {
   bool color;
   if (colors == 1) {

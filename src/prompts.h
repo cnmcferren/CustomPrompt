@@ -1,7 +1,13 @@
 #ifndef __PROMPTS_H_INCLUDE__
 #define __PROMPTS_H_INCLUDE__
 
-#include <string> 
+#include "prompts.h"
+#include "colors.h"
+#include <string>
+#include <iostream>
+#include <unistd.h>
+#include <pwd.h>
+#include <stdbool.h>
 
 using namespace std;
 
