@@ -20,14 +20,6 @@ void PrintStandard(string cwd, string hostname, string username, int colors) {
   else {
     color = false;
   }
-  /*
-  cout << (color ? WHITEDGRAY  : "") << username <<
-          (color ? DGRAYORANGE : "") << ARROW << " " <<
-          (color ? WHITEORANGE : "") << hostname <<
-          (color ? ORANGEDGRAY : "") << ARROW << " " <<
-          (color ? WHITEDGRAY  : "") << cwd << (colors ? DGRAYDEFAULT : "") <<
-          ARROW << (color ? RESET : "") << endl;
-  */
   cout << (color ? STAND1  : "") << username <<
           (color ? STAND2 : "") << ARROW << " " <<
           (color ? STAND3 : "") << hostname <<
@@ -67,12 +59,20 @@ void PrintGit(string cwd, string hostname, string username, int colors) {
   else {
     color = false;
   }
+  /*
   cout << (color ? FGBB  : "") << username <<
           (color ? FBBG : "") << ARROW << " " <<
           (color ? FBBG : "") << BRANCH << " " << hostname <<
           (color ? FGBB : "") << ARROW << " " <<
           (color ? FGBB  : "") << cwd << (colors ? FBBD : "") <<
+          ARROW << (color ? RESET : "") << endl;*/
+  cout << (color ? GIT1  : "") << username <<
+          (color ? GIT2 : "") << ARROW << " " <<
+          (color ? GIT2 : "") << BRANCH << " " << hostname <<
+          (color ? GIT1 : "") << ARROW << " " <<
+          (color ? GIT1  : "") << cwd << (colors ? GIT3 : "") <<
           ARROW << (color ? RESET : "") << endl;
+
 }
 
 void Git(int colors, char * branchName) {
