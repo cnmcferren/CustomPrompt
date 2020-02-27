@@ -59,13 +59,6 @@ void PrintGit(string cwd, string hostname, string username, int colors) {
   else {
     color = false;
   }
-  /*
-  cout << (color ? FGBB  : "") << username <<
-          (color ? FBBG : "") << ARROW << " " <<
-          (color ? FBBG : "") << BRANCH << " " << hostname <<
-          (color ? FGBB : "") << ARROW << " " <<
-          (color ? FGBB  : "") << cwd << (colors ? FBBD : "") <<
-          ARROW << (color ? RESET : "") << endl;*/
   cout << (color ? GIT1  : "") << username <<
           (color ? GIT2 : "") << ARROW << " " <<
           (color ? GIT2 : "") << BRANCH << " " << hostname <<
@@ -107,11 +100,11 @@ void PrintError(string cwd, string hostname, string username, int colors) {
   else {
     color = false;
   }
-  cout << (color ? FRBW  : "") << username <<
-          (color ? FWBR : "") << ARROW << " " <<
-          (color ? FWBR : "") << hostname <<
-          (color ? FRBW : "") << ARROW << " " <<
-          (color ? FRBW  : "") << cwd << (colors ? FWBD : "") <<
+  cout << (color ? ERR1  : "") << username <<
+          (color ? ERR2 : "") << ARROW << " " <<
+          (color ? ERR2 : "") << hostname <<
+          (color ? ERR1 : "") << ARROW << " " <<
+          (color ? ERR1  : "") << cwd << (colors ? ERR3 : "") <<
           ARROW << (color ? RESET : "") << endl;
 }
 

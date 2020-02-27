@@ -29,6 +29,11 @@
 #define GIT2 "\033[38;5;" GITSEC ";48;5;" GITPRIM "m"
 #define GIT3 "\033[38;5;" GITSEC ";48;5;234m"
 
+//Error Prompt Colors
+#define ERR1 "\033[38;5;" ERRPRIM ";48;5;" ERRSEC "m"
+#define ERR2 "\033[38;5;" ERRSEC ";48;5;" ERRPRIM "m"
+#define ERR3 "\033[38;5;" ERRSEC ";48;5;234m"
+
 /*
 //Colors
 #define DGRAYORANGE "\033[48;5;202;38;5;243m"
@@ -36,7 +41,6 @@
 #define DGRAYDEFAULT "\033[38;5;243;48;5;234m"
 #define WHITEDGRAY "\033[38;5;255;48;5;243m"
 #define WHITEORANGE "\033[38;5;255;48;5;202m"
-*/
 #define FBBW "\033[38;5;232;48;5;15m"
 #define FWBR "\033[38;5;15;48;5;196m"
 #define FRBW "\033[38;5;196;48;5;15m"
@@ -45,6 +49,7 @@
 #define FBBG "\033[38;5;33;48;5;46m"
 #define FGBB "\033[38;5;46;48;5;33m"
 #define FBBD "\033[38;5;33;48;5;234m"
+*/
 
 //Modes
 #define RESET "\033[0m"
