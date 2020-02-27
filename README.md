@@ -8,6 +8,8 @@ for Linux and Mac OS X by using C++ and ANSI escape sequences.
 Download this repository. In the root of the project folder, use the 
 Makefile to install.
 `make install`
+During the install, a critical segment will be added to ~/.bash_profile in
+order for the prompt to work properly.
 To update the prompt to reflect color changes, run the following command:
 `make update`
 
