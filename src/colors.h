@@ -5,12 +5,32 @@
 #define ARROW ""
 #define BRANCH ""
 
+//WHITEDGRAY DGRAYORANGE WHITEORANGE ORANGEDGRAY WHITEDGRAY DGRAYDEFAULT stand
+//FGBB FBBG FBBG FGBB FGBB FBBD git
+//FRBW FWBR FWBR FRBW FRBW FWBD err
+
+#define STANDPRIM "202" //Orange
+#define STANDSEC "243" //DarkGray
+#define STANDTER "255" //White
+#define GITPRIM "46" //Blue
+#define GITSEC "33" //Green
+#define ERRPRIM "255" //White
+#define ERRSEC "196" //Red
+
+#define STAND1 "\033[38;5;" STANDTER ";48;5;" STANDSEC "m"
+#define STAND2 "\033[38;5;" STANDPRIM ";48;5;" STANDSEC "m"
+#define STAND3 "\033[38;5;" STANDPRIM ";48;5;" STANDTER "m"
+#define STAND4 "\033[38;5;" STANDSEC ";48;5;" STANDPRIM "m"
+#define STAND5 "\033[38;5;" STANDSEC ";48;5;234m"
+
+/*
 //Colors
 #define DGRAYORANGE "\033[48;5;202;38;5;243m"
 #define ORANGEDGRAY "\033[38;5;202;48;5;243m"
 #define DGRAYDEFAULT "\033[38;5;243;48;5;234m"
 #define WHITEDGRAY "\033[38;5;255;48;5;243m"
 #define WHITEORANGE "\033[38;5;255;48;5;202m"
+*/
 #define FBBW "\033[38;5;232;48;5;15m"
 #define FWBR "\033[38;5;15;48;5;196m"
 #define FRBW "\033[38;5;196;48;5;15m"

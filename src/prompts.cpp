@@ -9,7 +9,9 @@
 using namespace std;
 
 
-//WHITEDGRAY DGRAYORANGE WHITEORANGE ORANGEDGRAY WHITEDGRAY DGRAYDEFAULT
+//WHITEDGRAY DGRAYORANGE WHITEORANGE ORANGEDGRAY WHITEDGRAY DGRAYDEFAULT stand
+//FGBB FBBG FBBG FGBB FGBB FBBD git
+//FRBW FWBR FWBR FRBW FRBW FWBD err
 void PrintStandard(string cwd, string hostname, string username, int colors) {
   bool color;
   if (colors == 1) {
@@ -18,12 +20,21 @@ void PrintStandard(string cwd, string hostname, string username, int colors) {
   else {
     color = false;
   }
+  /*
   cout << (color ? WHITEDGRAY  : "") << username <<
           (color ? DGRAYORANGE : "") << ARROW << " " <<
           (color ? WHITEORANGE : "") << hostname <<
           (color ? ORANGEDGRAY : "") << ARROW << " " <<
           (color ? WHITEDGRAY  : "") << cwd << (colors ? DGRAYDEFAULT : "") <<
           ARROW << (color ? RESET : "") << endl;
+  */
+  cout << (color ? STAND1  : "") << username <<
+          (color ? STAND2 : "") << ARROW << " " <<
+          (color ? STAND3 : "") << hostname <<
+          (color ? STAND4 : "") << ARROW << " " <<
+          (color ? STAND1  : "") << cwd << (colors ? STAND5 : "") <<
+          ARROW << (color ? RESET : "") << endl;
+
 }
 
 void Standard(int colors) {
