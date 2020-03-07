@@ -38,7 +38,6 @@ void Standard(int colors) {
 
 }
 
-//FGBB FBBG FBBG FGBB FGBB FBBD
 void PrintGit(string cwd, string hostname, string username, int colors) {
   bool color;
   if (colors == 1) {
@@ -58,18 +57,15 @@ void PrintGit(string cwd, string hostname, string username, int colors) {
 
 void Git(int colors, char * branchName) {
   int buffersize = 256;
-	//char hostname[buffersize];
 	char cwd[buffersize];
 	struct passwd* pw;
 
-	//gethostname(hostname,sizeof(hostname));
 	pw = getpwuid(getuid());
 	getcwd(cwd,sizeof(cwd));
 	string stringHostname(branchName);
 
 	string stringCwd = FormatCWD(cwd);
 	string stringUsername = pw->pw_name;
-	//string stringHostname = hostname;
 
 	if (stringCwd == stringUsername) {
 		stringCwd = "~";
@@ -79,7 +75,6 @@ void Git(int colors, char * branchName) {
 
 }
 
-//FRBW FWBR FWBR FRBW FRBW FWBD
 void PrintError(string cwd, string hostname, string username, int colors) {
   bool color;
   if (colors == 1) {
