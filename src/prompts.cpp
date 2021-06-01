@@ -1,4 +1,5 @@
 #include "prompts.h"
+#include <sys/ioctl.h>
 
 void PrintStandard(string cwd, string hostname, string username, int colors) {
   bool color;

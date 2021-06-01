@@ -7,7 +7,6 @@ compile:
 
 copy: compile
 	@echo "Copying to home directory..."
-	@mkdir ~/.bashconfig
 	@cp bin/${OUTPUT} ~/.bashconfig
 
 install: copy
