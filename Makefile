@@ -2,6 +2,7 @@ OUTPUT=customprompt.out
 FLAGS=-Wall -std=c++14
 
 compile:
+	@mkdir ~/.bashconfig
 	@echo "Compiling..."
 	@g++ src/prompts.cpp src/engine.cpp -o bin/${OUTPUT} ${FLAGS}
 
@@ -16,8 +17,8 @@ install: copy
 
 clean:
 	@echo "Removing ~/.bashconfig..."
-	@rm -r ~/.bashconfig
+	@rm -rf ~/.bashconfig
 
-update: clean copy
+update: clean install
 	@echo "Updating bash profile..."
 	@source ~/.bash_profile
