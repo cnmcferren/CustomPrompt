@@ -8,13 +8,13 @@
 //Colors
 //To change colors, change values here but choosing appropriate
 //ANSI color
-#define STANDPRIM "39"
-#define STANDSEC "246"
+#define STANDPRIM "243"
+#define STANDSEC "91"
 #define STANDTER "255"
-#define GITPRIM "46"
-#define GITSEC "243"
-#define ERRPRIM "196"
-#define ERRSEC "255"
+#define GITPRIM "208"
+#define GITSEC "238"
+#define ERRPRIM "254"
+#define ERRSEC "9"
 
 //Standard Prompt Colors
 #define STAND1 "\033[38;5;" STANDTER ";48;5;" STANDSEC "m"
